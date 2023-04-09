@@ -3,7 +3,8 @@ const express = require("express");
 const app = express();
 
 app.get("/", function (req, res) {
-    res.send("<h1>Hello, calculator world</h1>")
+    console.log(__dirname)
+    res.sendFile(__dirname + "/index.html")
 })
 
 
